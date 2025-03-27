@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func ans4() {
+func Ans4() {
 	var x string
 	fmt.Scanln(&x)
 	list := strings.Split(x, ",")
@@ -19,13 +19,14 @@ func ans4() {
 }
 
 func main() {
-	x, y := 0, 0
-	// 12k33
-	fmt.Scanf("%dc%d\n", &x, &y)
-	fmt.Println(x, y)
+	// x, y := 0, 0
+	// // 12k33
+	// fmt.Scanf("%dc%d\n", &x, &y)
+	// fmt.Println(x, y)
 
-	//k12c33
-	fmt.Scanf("b%dc%d", &x, &y)
-	fmt.Println(x, y)
+	// //k12c33
+	// fmt.Scanf("b%dc%d", &x, &y)
+	// fmt.Println(x, y)
 
+	Ans6()
 }
