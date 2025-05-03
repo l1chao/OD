@@ -23,3 +23,24 @@ func maxVowels(s string, k int) int {
 	}
 	return maxNum
 }
+
+func maxVowels1(s string, k int) int {
+	maxN := 0
+	stat := 0
+	j := 0
+	for i, v := range s {
+		if v == 'a' || v == 'e' || v == 'i' || v == 'o' || v == 'u' {
+			stat++
+		}
+		if i < k-1 {
+			continue
+		}
+		maxN = max(maxN, stat)
+
+		if s[j] == 'a' || s[j] == 'e' || s[j] == 'i' || s[j] == 'o' || s[j] == 'u' {
+			stat--
+			j++
+		}
+	}
+	return maxN
+}
